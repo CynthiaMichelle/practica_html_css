@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>¿Te animas a adoptar?</h1>
+    <form
+    action="registro.completado.html"
+    method="get"
+    novalidate>
+    <div>
+    <input 
+        required name="nombre" 
+        id="nombre" 
+        type="nombre" 
+        placeholder="Nombre">
+    <input 
+        required name="apellido" 
+        id="apellido" 
+        type="apellido" 
+        placeholder="Apellido">
+    </div>
+    <br>
+    <div>
+    <input 
+        required type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Email">
+    <input 
+        required type="numero" 
+        name="numero" 
+        id="numero"
+        pattern="[0-9]+" 
+        placeholder="Número">
+    </div>
+   <br>
+    <div>
+    <legend>¿Como nos conociste?</legend> 
+    <input 
+        type="radio" 
+        name="Facebook" 
+        id="Facebook" 
+        value="Facebook">
+    <label for="Facebook">Facebook</label>
+    <br>
+    <input 
+        type="radio" 
+        name="instagram" 
+        id="instagram" 
+        value="instagram">
+    <label for="instagram">Instagram</label>
+    <br>
+    <input 
+        type="radio" 
+        name="amigo" 
+        id="amigo" 
+        value="amigo" checked>
+    <label for="amigo">Un amigo</label>
+    <br>
+    <input 
+        type="radio" 
+        name="web" 
+        id="web" 
+        value="web">
+    <label for="web">Página Web</label>
+     </div>
+     <br>
+     <input 
+        type="tag" 
+        placeholder="BUSCAR TAG GITHUB???">
+     <div>
+     <br>
+     <textarea
+     placeholder="¿Por qué quieres adoptar?" 
+        required maxlength="180" 
+        name="bio" 
+        id="bio" 
+        cols="30" 
+        rows="10"></textarea>
+    </div>
+    <br>
+     <div>
+        <input 
+            type="submit" 
+            value="Guardar">
+     </div>
+    </form>
+</body>
+</html>
