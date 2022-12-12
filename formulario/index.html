@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="/reset_css/reset.css">
 </head>
 <body>
     <h1>¿Te animas a adoptar?</h1>
@@ -24,7 +25,6 @@
         type="apellido" 
         placeholder="Apellido">
     </div>
-    <br>
     <div>
     <input 
         required type="email" 
@@ -38,7 +38,24 @@
         pattern="[0-9]+" 
         placeholder="Número">
     </div>
-   <br>
+    <div>
+        <select name="ciudad" id="ciudad">
+            <option value="mad">Madrid</option>
+            <option value="gal">Galicia</option>
+            <option value="cata">Cataluña</option>
+            <option value="ast">Asturias</option>
+            <option value="cant">Cantabria</option>
+            <option value="arag">Aragón</option>
+            <option value="val">Comunidad Valenciana</option>
+            <option value="mur">Murcia</option>
+            <option value="and">Andalucía</option>
+            <option value="extr">Extremadura</option>
+            <option value="castm">Castilla la Mancha</option>
+            <option value="castl">Castilla y León</option>
+            <option value="can">Canarias</option>
+            <option value="bal">Baleares</option>
+        </select>
+    </div>
     <div>
     <legend>¿Como nos conociste?</legend> 
     <input 
@@ -47,21 +64,18 @@
         id="Facebook" 
         value="Facebook">
     <label for="Facebook">Facebook</label>
-    <br>
     <input 
         type="radio" 
         name="instagram" 
         id="instagram" 
         value="instagram">
     <label for="instagram">Instagram</label>
-    <br>
     <input 
         type="radio" 
         name="amigo" 
         id="amigo" 
         value="amigo" checked>
     <label for="amigo">Un amigo</label>
-    <br>
     <input 
         type="radio" 
         name="web" 
@@ -69,12 +83,15 @@
         value="web">
     <label for="web">Página Web</label>
      </div>
-     <br>
+     <label for="usuario">Usuario miembro</label>
      <input 
-        type="tag" 
-        placeholder="BUSCAR TAG GITHUB???">
+     type="tag" 
+     name="user"
+     id="user"
+     placeholder="Usuario"
+     pattern="^@[^\s]+">
+ 
      <div>
-     <br>
      <textarea
      placeholder="¿Por qué quieres adoptar?" 
         required maxlength="180" 
@@ -83,7 +100,6 @@
         cols="30" 
         rows="10"></textarea>
     </div>
-    <br>
      <div>
         <input 
             type="submit" 
