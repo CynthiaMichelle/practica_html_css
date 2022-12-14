@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web adopcion </title>
+    <link rel="stylesheet" href="/reset_css/reset.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/skills.css">
+
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Huellas Felices</h1>
+        <img
+        id="huella" 
+        src="/html/img/huella-oficial.png" 
+        alt="huella" 
+        title="huella" 
+        width="5%">
+        <img 
+        class="foto-header"
+        src="/html/img/header-retocada.png" 
+        alt="header"
+        title="header"
+        width="300px">
+       
+        <nav class="menu">
+            <ul class="navegacion">
+                <li class="list-nav"><a href="">Inicio</a></li>
+                <li class="list-nav"><a href=""> Perros en Adopción</a></li>
+                <li class="list-nav"><a href="">Formulario</a></li>
+                <li class="list-nav"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <div>
+        <img 
+        src="/html/img/foto_fondo.webp"
+        title="fondo"
+        alt="fondo"
+        width="900px">
+    </div>
+    <div>
+        <p>
+            <strong class="huellas"> Huellas felices,
+            Esperando Una Nueva Vida</strong>        
+            <br class="texto">
+            La protectora huellas felices es una entidad sin ánimo de lucro que se fundó en Madrid (España) en 
+            1992, como respuesta al elevado número de animales que son abandonados y maltratados en nuestro país.
+            Durante el año 2018 fueron recogidos 104.688 perros.
+        </p>
+    </div>
+    
+    <p><strong>Perros adoptados</strong></p>
+    <div class="progress">
+        <div class="progress-bar" 
+        style="width:42.7%;">
+        <span 
+        class="progress-bar-text">42,7%</span>
+        </div>
+    </div>
+    <p> <strong>Animales devueltos</strong></p>
+    <div class="progress">
+        <div class="progress-bar" 
+        style="width:18.2%;">
+        <span 
+        class="progress-bar-text">18,2%</span>
+        </div>
+    </div>
+    <p> <strong>Permanacen en el refugio</strong></p>
+    <div class="progress">
+        <div class="progress-bar" 
+        style="width:15.6%;">
+        <span 
+        class="progress-bar-text">15,6%</span>
+        </div>
+    </div>
+    <p> <strong>Son sacrificados</strong></p>
+    <div class="progress">
+        <div class="progress-bar" 
+        style="width:9.4%;">
+        <span 
+        class="progress-bar-text">9,4%</span>
+        </div>
+    </div>
+
+        <div>
+        <p>Huellas felices es parte integrante de la Coordinadora Estatal de Protección Animal CEPA <a href="proteccion animal">www.proteccionanimal.org</a>, en la que la asociación trabaja conjuntamente con otras en denuncias, propuestas legislativas y campañas de concienciación.
+        </p>
+    </div>
+    <!--añadir video protectora, VER QUE FALLA -->
+    <iframe    
+    src="https://www.youtube.com/embed/X9QxvAaf_kY" title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Mascotas en adopción</h2>
+    <div class="nala">
+        <img 
+        src="/html/img/perro_1.jpg" 
+        alt="nala"
+        title="nala"
+        width="200px">
+        <p>Hembra 6 años</p>
+
+
+    </div>
+
+    <form
+    action="registro.completado.html"
+    method="get"
+    novalidate>
+    <div>
+    <input 
+        required name="nombre" 
+        id="nombre" 
+        type="nombre" 
+        placeholder="Nombre">
+    <input 
+        required name="apellido" 
+        id="apellido" 
+        type="apellido" 
+        placeholder="Apellido">
+        </div>
+    <div>
+    <input 
+        required type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Email">
+    <input 
+        required type="numero" 
+        name="numero" 
+        id="numero"
+        pattern="[0-9]+" 
+        placeholder="Número">
+    </div>
+    <div class="selector">
+        <select name="ciudad" id="ciudad">
+            <option value="mad">Madrid</option>
+            <option value="gal">Galicia</option>
+            <option value="cata">Cataluña</option>
+            <option value="ast">Asturias</option>
+            <option value="cant">Cantabria</option>
+            <option value="arag">Aragón</option>
+            <option value="val">Comunidad Valenciana</option>
+            <option value="mur">Murcia</option>
+            <option value="and">Andalucía</option>
+            <option value="extr">Extremadura</option>
+            <option value="castm">Castilla la Mancha</option>
+            <option value="castl">Castilla y León</option>
+            <option value="can">Canarias</option>
+            <option value="bal">Baleares</option>
+        </select>
+    </div>
+    <div>
+    <legend>¿Como nos conociste?</legend> 
+    <input 
+        type="radio" 
+        name="Facebook" 
+        id="Facebook" 
+        value="Facebook">
+    <label for="Facebook">Facebook</label>
+    <input 
+        type="radio" 
+        name="instagram" 
+        id="instagram" 
+        value="instagram">
+    <label for="instagram">Instagram</label>
+    <input 
+        type="radio" 
+        name="amigo" 
+        id="amigo" 
+        value="amigo" checked>
+    <label for="amigo">Un amigo</label>
+    <input 
+        type="radio" 
+        name="web" 
+        id="web" 
+        value="web">
+    <label for="web">Página Web</label>
+     </div>
+     <label for="usuario">Usuario miembro</label>
+     <input 
+     type="tag" 
+     name="user"
+     id="user"
+     placeholder="Usuario"
+     pattern="^@[^\s]+">
+ 
+     <div>
+     <textarea
+     placeholder="¿Por qué quieres adoptar?" 
+        required maxlength="180" 
+        name="bio" 
+        id="bio" 
+        cols="30" 
+        rows="10"></textarea>
+    </div>
+     <div>
+        <input 
+            type="submit" 
+            value="Enviar datos">
+     </div>
+    </form>
+
+    <hr>
+
+    <footer>
+        <div class="iconos">
+    <a 
+    title="facebook" 
+    href="https://es-es.facebook.com/">
+        <img 
+        src="/html/img/img-icons/icono-facebook-1.png" 
+        alt="facebook"
+        title="facebook"
+        width="40px">
+    </a>
+    <a 
+    title="instagram" 
+    href="https://www.instagram.com/">
+        <img 
+        src="/html/img/img-icons/Instagram.png" 
+        alt="instagram"
+        title="instagram"
+        width="40px">
+    </a>
+    <a 
+    title="twitter" 
+    href="https://twitter.com/">
+        <img 
+        src="img/img-icons/twitter.png" 
+        alt="twitter"
+        title="twitter"
+        width="40px">
+    </a>
+</div>
+        </footer>
+
+</body>
+</html>

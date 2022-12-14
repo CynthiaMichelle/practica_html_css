@@ -1,0 +1,19 @@
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.navegacion{
+    display: flex;
+}
+
+.list-nav{
+    margin-left: 50px;
+    text-decoration: none;
+    list-style: none;
+    font-size: medium;
+    font-style:arial;
+    box-shadow: none;   
+}

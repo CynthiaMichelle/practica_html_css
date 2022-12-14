@@ -1,0 +1,9 @@
+footer{
+    background-color: #fff;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
