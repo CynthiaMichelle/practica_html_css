@@ -56,7 +56,7 @@
         </p>
     </div>
     
-    <p><strong>Perros adoptados</strong></p>
+    <p class="frase-skills"><strong>Animales adoptados</strong></p>
     <div class="progress">
         <div class="progress-bar" 
         style="width:42.7%;">
@@ -64,7 +64,7 @@
         class="progress-bar-text">42,7%</span>
         </div>
     </div>
-    <p> <strong>Animales devueltos</strong></p>
+    <p class="frase-skills"> <strong>Animales devueltos</strong></p>
     <div class="progress">
         <div class="progress-bar" 
         style="width:18.2%;">
@@ -72,7 +72,7 @@
         class="progress-bar-text">18,2%</span>
         </div>
     </div>
-    <p> <strong>Permanacen en el refugio</strong></p>
+    <p class="frase-skills"> <strong>Permanacen en el refugio</strong></p>
     <div class="progress">
         <div class="progress-bar" 
         style="width:15.6%;">
@@ -80,7 +80,7 @@
         class="progress-bar-text">15,6%</span>
         </div>
     </div>
-    <p> <strong>Son sacrificados</strong></p>
+    <p class="frase-skills"> <strong>Sacrificados</strong></p>
     <div class="progress">
         <div class="progress-bar" 
         style="width:9.4%;">
@@ -115,33 +115,44 @@
     action="registro.completado.html"
     method="get"
     novalidate>
+    <legend class="header">
+        <strong> Si estás interesado, para más información:</strong>
+    </legend>
+    <hr>
     <div>
     <input 
+        class="datos"
         required name="nombre" 
         id="nombre" 
         type="nombre" 
         placeholder="Nombre">
-    <input 
+    <input
+        class="datos" 
         required name="apellido" 
         id="apellido" 
         type="apellido" 
         placeholder="Apellido">
         </div>
     <div>
-    <input 
+    <input
+        class="datos"
         required type="email" 
         name="email" 
         id="email" 
         placeholder="Email">
     <input 
+        class="datos"
         required type="numero" 
         name="numero" 
         id="numero"
         pattern="[0-9]+" 
         placeholder="Número">
     </div>
-    <div class="selector">
-        <select name="ciudad" id="ciudad">
+    <div>
+        <select 
+        class="selector"
+        name="ciudad" 
+        id="ciudad">
             <option value="mad">Madrid</option>
             <option value="gal">Galicia</option>
             <option value="cata">Cataluña</option>
@@ -159,40 +170,51 @@
         </select>
     </div>
     <div>
-    <legend>¿Como nos conociste?</legend> 
+        <hr>
+    <legend class="pregunta">
+        ¿Cómo nos conociste?
+    </legend> 
     <input 
+        class="radio"
         type="radio" 
         name="Facebook" 
         id="Facebook" 
         value="Facebook">
-    <label for="Facebook">Facebook</label>
+    <label class="palabra-radio" for="Facebook">Facebook</label>
     <input 
+        class="radio"
         type="radio" 
         name="instagram" 
         id="instagram" 
         value="instagram">
-    <label for="instagram">Instagram</label>
-    <input 
+    <label class="palabra-radio" for="instagram">Instagram</label>
+    <input
+        class="radio"
         type="radio" 
         name="amigo" 
         id="amigo" 
         value="amigo" checked>
-    <label for="amigo">Un amigo</label>
+    <label class="palabra-radio" for="amigo">Un amigo</label>
     <input 
+        class="radio"
         type="radio" 
         name="web" 
         id="web" 
         value="web">
-    <label for="web">Página Web</label>
+    <label class="palabra-radio" for="web">Página Web</label>
      </div>
-     <label for="usuario">Usuario miembro</label>
-     <input 
+     <hr>
+     <label 
+     for="usuario"
+     class="usuariomiembro">Usuario miembro</label>
+     <input
+     class="usuario" 
      type="tag" 
      name="user"
      id="user"
      placeholder="Usuario"
      pattern="^@[^\s]+">
- 
+     <hr>
      <div>
      <textarea
      placeholder="¿Por qué quieres adoptar?" 
@@ -203,7 +225,8 @@
         rows="10"></textarea>
     </div>
      <div>
-        <input 
+        <input
+            class="enviar" 
             type="submit" 
             value="Enviar datos">
      </div>

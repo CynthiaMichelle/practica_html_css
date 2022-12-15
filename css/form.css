@@ -4,25 +4,73 @@ form{
     max-width: 100%;
 	padding:20px;
 	margin:auto;
-	background-color:rgb(178, 243, 231);
+	background-color:rgb(131, 181, 184);
 }
-
+.header{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: x-large;
+	color: #f1f1f1;
+}
 .datos{
     width: 300px;
     margin-bottom: 20px;
+	background-color:rgb(252, 255, 254);
+	border-radius: 5px;
+	font-family:'Lucida Sans', 'Lucida Sans 		Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: medium;
+	border: turquoise;	
 }
 
 .selector{
-    margin-bottom: 10px;
+border-radius: 5px;
+border:turquoise;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: medium;
+color:grey;
+
 }
 
+.pregunta{
+	font-size: large;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #f1f1f1;
+}
+
+.palabra-radio{
+	font-size: medium;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: rgb(101, 99, 99);;
+	font-weight: bold;
+}
+.usuariomiembro{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: medium;
+	font-weight: bold;
+	color: #f1f1f1;
+
+}
+.usuario{
+	border: turquoise;
+	border-radius: 5px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: small;
+}
 textarea{
     width:100%;
 	height:50px;
 	border:1px solid #f6f6f6;
 	border-radius:10px;
-	background-color:#f6f6f6;			
+	background-color:#e8e8e8;			
 	margin:8px 0;
 	resize:none;
 	display:block;
+	font-size: large;
+}
+
+.enviar{
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: small;
+	border-radius: 20px;
+	border: turquoise;
 }
