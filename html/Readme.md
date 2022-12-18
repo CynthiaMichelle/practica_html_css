@@ -3,7 +3,7 @@ Este repositorio es una web de animales en adopción.
 En primer lugar, se encuentra el header que esta dividido en dos partes:
 La primera es una barra de navegación en la que tendremos el nombre de la protectora y su logo, y una serie de links que dirigen a diferentes partes de la página. En concreto, el link de "Adopción" dirige a otra página con el detalle de los animales disponibles para adoptar (realizado con CSS grid).
 
-La segunda parte del header contiene una imagen y un texto de descripcion de la protectora.
+La segunda parte del header contiene una imagen y un texto de descripcion de la protectora, el tamaño de este texto se asigna de forma dinamica mediante una media query dependiente al ancho de la página.
 
 A continuación, se encuentra una sección con datos estadisticos representados con unas barras de progreso animadas, y un video de Youtube.
 
